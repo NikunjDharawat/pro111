@@ -52,6 +52,38 @@ fig.show()
 
 
 
+df = pd.read_csv("medium_article.csv")
+data = df["medium-article"].tolist()
+mean_of_sample1 = statistics.mean(data)
+print("Mean of article:- ",mean_of_sample2)
+fig = ff.create_distplot([mean_list], ["reading_time"], show_hist=False)
+fig.add_trace(go.Scatter(x=[mean, mean], y=[0, 0.17], mode="lines", name="MEAN"))
+fig.add_trace(go.Scatter(x=[mean_of_sample2, mean_of_sample2], y=[0, 0.17], mode="lines", name="MEAN OF STUDENTS WHO HAD MATH LABS"))
+fig.add_trace(go.Scatter(x=[first_std_deviation_end, first_std_deviation_end], y=[0, 0.17], mode="lines", name="STANDARD DEVIATION 1 END"))
+fig.add_trace(go.Scatter(x=[second_std_deviation_end, second_std_deviation_end], y=[0, 0.17], mode="lines", name="STANDARD DEVIATION 2 END"))
+fig.add_trace(go.Scatter(x=[third_std_deviation_end, third_std_deviation_end], y=[0, 0.17], mode="lines", name="STANDARD DEVIATION 3 END"))
+fig.show()
+
+
+
+
+
+df = pd.read_csv("medium_article.csv")
+data = df["medium-article"].tolist()
+mean_of_sample1 = statistics.mean(data)
+print("Mean of article:- ",mean_of_sample3)
+fig = ff.create_distplot([mean_list], ["reading_time"], show_hist=False)
+fig.add_trace(go.Scatter(x=[mean, mean], y=[0, 0.17], mode="lines", name="MEAN"))
+fig.add_trace(go.Scatter(x=[mean_of_sample3, mean_of_sample3], y=[0, 0.17], mode="lines", name="MEAN OF STUDENTS WHO HAD MATH LABS"))
+fig.add_trace(go.Scatter(x=[first_std_deviation_end, first_std_deviation_end], y=[0, 0.17], mode="lines", name="STANDARD DEVIATION 1 END"))
+fig.add_trace(go.Scatter(x=[second_std_deviation_end, second_std_deviation_end], y=[0, 0.17], mode="lines", name="STANDARD DEVIATION 2 END"))
+fig.add_trace(go.Scatter(x=[third_std_deviation_end, third_std_deviation_end], y=[0, 0.17], mode="lines", name="STANDARD DEVIATION 3 END"))
+fig.show()
+
+
+
+
+
 z_score = (mean - mean_of_sample1-mean)/std_deviation
 print("The z score is = ",z_score)
 
